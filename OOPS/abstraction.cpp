@@ -30,21 +30,21 @@ public:
         cuurentGear = 0;
     }
 
-    void startEngine() {
+    void startEngine() override {
         isEngineOn = true;
     }
 
-    void shiftGear(int gear) {
+    void shiftGear(int gear) override {
         cuurentGear = gear;
     }
 
-    void accelerate() {
+    void accelerate() override {
         if (isEngineOn) {
             currentSpeed += 10;
         }
     }
 
-    void brake() {
+    void brake() override {
         currentSpeed = 0;
     }
 };
