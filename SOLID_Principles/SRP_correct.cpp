@@ -76,6 +76,9 @@ int main(){
     ShoppingCart* sc = new ShoppingCart();
 
     sc->addProduct(new Product(99.9,"Laptop"));
-
+    saveToDB* db = new saveToDB(sc);
+    shoppingCartInvoice* printer = new shoppingCartInvoice(sc);
+    db->saveToDB1();
+    printer->printInvoice();
     return 0;
 }
