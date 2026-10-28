@@ -85,7 +85,7 @@ int main(){
     Persistence* mong = new MongoPersistence();
     Persistence* file = new FilePersistence();
 
-    db->save(sc);
+    db->save(sc); 
     mong->save(sc);
     file->save(sc);
 
