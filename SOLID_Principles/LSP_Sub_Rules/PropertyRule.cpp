@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//abstract class
 class Account{
 private:
     int balance = 0;
@@ -41,6 +42,8 @@ public:
         balance -= ammt;
     }
 
+  
+
 
 };
 
@@ -49,3 +52,9 @@ int main(){
     mc->deposit(133);
     mc->withdraw(20000);
 }
+
+/*
+
+class 
+
+*/
