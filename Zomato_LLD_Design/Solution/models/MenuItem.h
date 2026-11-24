@@ -1,0 +1,54 @@
+#ifndef MENUITEM_H
+#define MENUITEM_H
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class MenuItem{
+private:
+    string code;
+    string name;
+    double price;
+    static int nextMenuItemId;
+
+public:
+    MenuItem(const string& code, const string& name, double price){
+        this->code = code;
+        this->name = name;
+        this->price = price;
+    }
+
+    string getCode() const {
+        return code;
+    }
+
+    void setCode(const string& c){
+        code = c;
+    }
+
+    string getName() const{
+        return name;
+    }
+
+    void setName(const string& n){
+        name = n;
+    }
+
+    int getPrice() const{
+        return price;
+    }
+
+    void setPrice(int p){
+        price = p;
+    }
+
+    ~MenuItem(){
+        cout << "Destroyed MenuItem " << name << endl;
+    }
+
+};
+
+int MenuItem::nextMenuItemId = 0;
+
+
+#endif // MENUITEM_H
