@@ -53,6 +53,10 @@ public:
     double getTotal() const{
         return total;
     }
+
+    const vector<MenuItem*>& getCartItems() const{
+        return items;
+    }
 };
 
 int Cart::nextCartId = 0;
